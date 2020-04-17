@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_sub"
+
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:background="@drawable/background_sub">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/isim_soyisim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_first"
+                    android:gravity="center"
+                    android:hint="Isim Soyisim"
+                    android:textColorHint="#66CCFF"
+                    android:textColor="#66CCFF"></EditText>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/tc_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_first"
+                    android:gravity="center"
+                    android:hint="TC Numarası"
+                    android:inputType="numberPassword"
+                    android:maxLength="11"
+                    android:textColorHint="#66CCFF"
+                    android:textColor="#66CCFF"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/login_first_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_first"
+                    android:gravity="center"
+                    android:hint="Giris"
+                    android:textColorHint="#66CCFF"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkbox_burun_akintisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burun Akıntısı"
+                    android:textColor="#2B5369"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/checkbox_hapşirik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapşırık"
+                    android:textColor="#2B5369"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/checkbox_hirilti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hırıltı"
+                    android:textColor="#2B5369"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/checkbox_gözlerde_kizarliklik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gözlerde Kızarlıklık"
+                    android:textColor="#2B5369"
+                    ></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/checkbox_bas_agrisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baş Ağrısı"
+                    android:textColor="#2B5369"></CheckBox>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkbox_bogaz_agrisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boğaz Ağrısı"
+                    android:textColor="#2B5369"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/checkbox_nefes_darligi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nefes Darlığı"
+                    android:textColor="#2B5369"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/checkbox_ani_ates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ani Ateş"
+                    android:textColor="#2B5369"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/checkbox_halsizlik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Halsizlik"
+                    android:textColor="#2B5369"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/checkbox_kuru_öksürük"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kuru Öksürük"
+                    android:textColor="#2B5369"></CheckBox>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></LinearLayout>
+
+
+</LinearLayout>
